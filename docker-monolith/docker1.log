@@ -1,0 +1,7 @@
+REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
+reuuke/ubuntu-tmp-file   latest              51d5664d4130        49 seconds ago      115MB
+ubuntu                   16.04               e13f3d529b1a        7 days ago          115MB
+hello-world              latest              2cb0d9787c4d        13 days ago         1.85kB
+
+Image - snapshot с минимально необходимыми параметрами для запуска
+Conteiner - Image + состояние + текущие настройки

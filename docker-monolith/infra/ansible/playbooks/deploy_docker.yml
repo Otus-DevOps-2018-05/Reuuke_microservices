@@ -1,0 +1,29 @@
+---
+- name: Install Docker Stable
+  hosts: tag_docker-host
+  become: true
+  tasks:
+  - name: Add key
+    apt_key:
+      url: https://download.docker.com/linux/ubuntu/gpg
+      state: present
+
+  - name: Add Docker repository
+    apt_repository:
+      repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+      state: present
+
+  - name: Install Docker
+    apt:
+      name: "{{ item }}"
+      state: present
+    with_items:
+      - docker-ce
+      - python-docker
+
+  - name: Configure systemd
+    systemd:
+      enabled: True
+      state: restarted
+      daemon_reload: yes
+      name: docker.service

@@ -1,0 +1,4 @@
+---
+- import_playbook: deploy_python.yml
+- import_playbook: deploy_docker.yml
+- import_playbook: deploy_app.yml

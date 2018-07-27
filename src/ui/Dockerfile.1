@@ -1,0 +1,28 @@
+FROM alpine:3.8
+ENV APP_HOME /app
+ENV CONFIGURE_OPTS --disable-install-doc
+ENV RUBY_VERSION 2.2.10
+ENV POST_SERVICE_HOST post
+ENV POST_SERVICE_PORT 5000
+ENV COMMENT_SERVICE_HOST comment
+ENV COMMENT_SERVICE_PORT 9292
+ENV PATH=/root/.rbenv/bin:/root/.rbenv/shims:${PATH}
+
+RUN apk upgrade --no-cache --update \
+    && apk add make bash readline-dev readline build-base zlib zlib-dev openssl openssl-dev git \
+    && mkdir $APP_HOME \
+    && wget -O - https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash \
+    && ac_cv_func_isnan=yes ac_cv_func_isinf=yes rbenv install ${RUBY_VERSION} \
+    && rbenv global ${RUBY_VERSION} \
+    && gem install bundle --no-ri --no-rdoc
+
+WORKDIR $APP_HOME
+COPY Gemfile* $APP_HOME/
+RUN bundle install
+COPY . $APP_HOME
+
+RUN gem uninstall bundle \
+    && apk del build-base make zlib-dev openssl-dev git readline-dev \
+    && rm -rf /var/cache/apk/*
+
+CMD ["sh","start.sh"]

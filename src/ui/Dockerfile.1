@@ -8,21 +8,21 @@ ENV COMMENT_SERVICE_HOST comment
 ENV COMMENT_SERVICE_PORT 9292
 ENV PATH=/root/.rbenv/bin:/root/.rbenv/shims:${PATH}
 
+RUN mkdir $APP_HOME 
+WORKDIR $APP_HOME
+COPY Gemfile* $APP_HOME/
+
 RUN apk upgrade --no-cache --update \
     && apk add make bash readline-dev readline build-base zlib zlib-dev openssl openssl-dev git \
-    && mkdir $APP_HOME \
     && wget -O - https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash \
     && ac_cv_func_isnan=yes ac_cv_func_isinf=yes rbenv install ${RUBY_VERSION} \
     && rbenv global ${RUBY_VERSION} \
-    && gem install bundle --no-ri --no-rdoc
-
-WORKDIR $APP_HOME
-COPY Gemfile* $APP_HOME/
-RUN bundle install
-COPY . $APP_HOME
-
-RUN gem uninstall bundle \
+    && gem install bundle --no-ri --no-rdoc \
+    && bundle install \
+    && gem uninstall bundle \
     && apk del build-base make zlib-dev openssl-dev git readline-dev \
     && rm -rf /var/cache/apk/*
+
+COPY . $APP_HOME
 
 CMD ["sh","start.sh"]

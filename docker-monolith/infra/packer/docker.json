@@ -1,0 +1,42 @@
+{
+    "variables": {
+            "project_id": null,
+            "source_image_family": "ubuntu-minimal-1804-lts",
+            "image_family": "docker-host",
+            "machine_type": "g1-small",
+            "image_description": "",
+            "disk_size": "20",
+            "disk_type": "pd-standard",
+            "network": "default",
+            "tags": ""
+    },
+    "builders": [
+        {
+            "type": "googlecompute",
+            "project_id": "{{user `project_id`}}",
+            "image_name": "docker-host-{{timestamp}}",
+            "image_family": "{{user `image_family`}}",
+            "source_image_family": "{{user `source_image_family`}}",
+            "zone": "europe-west4-a",
+            "ssh_username": "appuser",
+            "machine_type": "{{user `machine_type`}}",
+            "disk_size": "{{user `disk_size`}}",
+            "disk_type": "{{user `disk_type`}}",
+            "network": "{{user `network`}}",
+            "tags": "{{user `tags`}}"
+
+        }
+    ],
+    "provisioners": [
+        {   
+            "type": "ansible",
+            "playbook_file": "ansible/playbooks/deploy_python.yml",
+            "groups": "tag_docker-host"
+        },
+        {
+            "type": "ansible",
+            "playbook_file": "ansible/playbooks/deploy_docker.yml",
+            "groups": "tag_docker-host"
+        }
+    ]
+}

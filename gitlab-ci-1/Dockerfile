@@ -1,7 +1,7 @@
 FROM gitlab/gitlab-runner:latest
 ## Example
-ENV GITLAB_ENDPOINT http://35.203.124.1/
-ENV GITLAB_TOKEN bgMkesfdsjfkljds
+ENV GITLAB_ENDPOINT http://35.204.140.48/
+ENV GITLAB_TOKEN hebrjDzxxGzyt4eYf456
 ##
 
 COPY register.sh /

@@ -6,3 +6,4 @@ variables.json
 .terraform/
 *.retry
 docker-302207077cf3.json
+.env

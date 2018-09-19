@@ -5,6 +5,8 @@
 - [Docker-3](#docker-3)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=docker-3)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [Docker-4](#docker-4)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=docker-4)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [gitlab-ci-1](#gitlab-ci-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=gitlab-ci-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
+- [gitlab-ci-2](#gitlab-ci-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=gitlab-ci-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microserv
+ices)
 
 # Выполнено ДЗ №12
 
@@ -81,6 +83,24 @@
  - [X] Задание со *
   - Реализовано через образ с "вшитым" скриптом, выполняющим регистрацию. Параметры передаются в Dockerfile
   - Интеграция настроена (канал https://devops-team-otus.slack.com/messages/CBA7U7SFP)
+
+## В процессе сделано:
+ - ничего
+
+## Как проверить работоспособность:
+ - up
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+
+# Выполнено ДЗ №17
+
+ - [X] Основное ДЗ
+  - Выполнено
+ - [] Задание со *
+  - Что-то делал до отпуска, но уже забыл.
 
 ## В процессе сделано:
  - ничего

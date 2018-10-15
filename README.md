@@ -7,8 +7,8 @@
 - [gitlab-ci-1](#gitlab-ci-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=gitlab-ci-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [gitlab-ci-2](#gitlab-ci-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=gitlab-ci-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microserv
 ices)
-- [monitoring-1](#monitoring-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=monitoring-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microserv
-ices)
+- [monitoring-1](#monitoring-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=monitoring-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
+- [monitoring-2](#monitoring-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=monitoring-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 
 # Выполнено ДЗ №12
 

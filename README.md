@@ -7,6 +7,8 @@
 - [gitlab-ci-1](#gitlab-ci-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=gitlab-ci-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [gitlab-ci-2](#gitlab-ci-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=gitlab-ci-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microserv
 ices)
+- [monitoring-1](#monitoring-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=monitoring-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microserv
+ices)
 
 # Выполнено ДЗ №12
 
@@ -107,6 +109,24 @@ ices)
 
 ## Как проверить работоспособность:
  - up
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+# Выполнено ДЗ №18
+
+ - [X] Основное ДЗ
+  - Выполнено
+  - https://hub.docker.com/r/reuuke/
+ - [ ] Задание со *
+  - Пока не выполнено
+ 
+## В процессе сделано:
+ - выполнены все шаги из ДЗ
+
+## Как проверить работоспособность:
+ - docker-compose up -d
 
 ## PR checklist
  - [X] Выставил label с номером домашнего задания

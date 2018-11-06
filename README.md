@@ -10,6 +10,8 @@
 - [monitoring-2](#monitoring-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=monitoring-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [logging-1](#logging-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=logging-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_micros
 ervices)
+- [kubernetes-1](#kubernetes-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_micros
+ervices)
 
 # Выполнено ДЗ №12
 
@@ -163,6 +165,24 @@ ervices)
 
 ## Как проверить работоспособность:
  - docker-compose up -d
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+# Выполнено ДЗ №21
+
+ - [X] Основное ДЗ
+  - Выполнено
+ - [ ] Задание со *
+  - Пока не выполнено, оставленно на потом
+
+## В процессе сделано:
+ - выполнены все шаги из ДЗ
+ - частично изучение документации по k8s
+
+## Как проверить работоспособность:
+ - не требуется
 
 ## PR checklist
  - [X] Выставил label с номером домашнего задания

@@ -5,10 +5,9 @@
 - [Docker-3](#docker-3)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=docker-3)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [Docker-4](#docker-4)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=docker-4)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [gitlab-ci-1](#gitlab-ci-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=gitlab-ci-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
-- [gitlab-ci-2](#gitlab-ci-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=gitlab-ci-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microserv
-ices)
-- [monitoring-1](#monitoring-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=monitoring-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microserv
-ices)
+- [gitlab-ci-2](#gitlab-ci-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=gitlab-ci-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
+- [monitoring-1](#monitoring-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=monitoring-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
+- [monitoring-2](#monitoring-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=monitoring-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 
 # Выполнено ДЗ №12
 
@@ -122,6 +121,24 @@ ices)
  - [ ] Задание со *
   - Пока не выполнено
  
+## В процессе сделано:
+ - выполнены все шаги из ДЗ
+
+## Как проверить работоспособность:
+ - docker-compose up -d
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+# Выполнено ДЗ №19
+
+ - [X] Основное ДЗ
+  - Выполнено
+  - https://hub.docker.com/r/reuuke/
+ - [ ] Задание со *
+  - Пока не выполнено
+
 ## В процессе сделано:
  - выполнены все шаги из ДЗ
 

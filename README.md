@@ -12,6 +12,8 @@
 ervices)
 - [kubernetes-1](#kubernetes-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_micros
 ervices)
+- [kubernetes-2](#kubernetes-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_micros
+ervices)
 
 # Выполнено ДЗ №12
 
@@ -180,6 +182,23 @@ ervices)
 ## В процессе сделано:
  - выполнены все шаги из ДЗ
  - частично изучение документации по k8s
+
+## Как проверить работоспособность:
+ - не требуется
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+# Выполнено ДЗ №22
+
+ - [X] Основное ДЗ
+  - Выполнено. Ссылка http://35.204.246.113:30146/
+ - [ ] Задание со *
+  - Пока не выполнено, оставленно на потом
+
+## В процессе сделано:
+ - выполнены все шаги из ДЗ
 
 ## Как проверить работоспособность:
  - не требуется

@@ -14,6 +14,8 @@ ervices)
 ervices)
 - [kubernetes-2](#kubernetes-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_micros
 ervices)
+- [kubernetes-3](#kubernetes-3)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-3)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_micros
+ervices)
 
 # Выполнено ДЗ №12
 
@@ -202,6 +204,22 @@ ervices)
 
 ## Как проверить работоспособность:
  - не требуется
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+# Выполнено ДЗ №23
+
+ - [X] Основное ДЗ
+  - Пройдены все шаги из ДЗ
+
+## В процессе сделано:
+ - частично изучены доки по ingress и storage
+
+## Как проверить работоспособность:
+ - kubectl apply -f dev-namespace.yml
+ - kubectl apply -f . -n dev
 
 ## PR checklist
  - [X] Выставил label с номером домашнего задания

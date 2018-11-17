@@ -8,15 +8,11 @@
 - [gitlab-ci-2](#gitlab-ci-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=gitlab-ci-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [monitoring-1](#monitoring-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=monitoring-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [monitoring-2](#monitoring-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=monitoring-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
-- [logging-1](#logging-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=logging-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_micros
-ervices)
-- [kubernetes-1](#kubernetes-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_micros
-ervices)
-- [kubernetes-2](#kubernetes-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_micros
-ervices)
-- [kubernetes-3](#kubernetes-3)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-3)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_micros
-ervices)
-
+- [logging-1](#logging-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=logging-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
+- [kubernetes-1](#kubernetes-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
+- [kubernetes-2](#kubernetes-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
+- [kubernetes-3](#kubernetes-3)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-3)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
+- [kubernetes-4](#kubernetes-4)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-4)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 # Выполнено ДЗ №12
 
  - [X] Основное ДЗ
@@ -220,6 +216,21 @@ ervices)
 ## Как проверить работоспособность:
  - kubectl apply -f dev-namespace.yml
  - kubectl apply -f . -n dev
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+# Выполнено ДЗ №24
+
+ - [X] Основное ДЗ
+  - Пройдены все шаги из ДЗ
+
+## В процессе сделано:
+ - частично изучены доки по helm
+
+## Как проверить работоспособность:
+ - helm install
 
 ## PR checklist
  - [X] Выставил label с номером домашнего задания

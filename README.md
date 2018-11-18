@@ -13,6 +13,7 @@
 - [kubernetes-2](#kubernetes-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [kubernetes-3](#kubernetes-3)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-3)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 - [kubernetes-4](#kubernetes-4)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-4)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
+- [kubernetes-5](#kubernetes-5)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices.svg?branch=kubernetes-5)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_microservices)
 # Выполнено ДЗ №12
 
  - [X] Основное ДЗ
@@ -231,6 +232,21 @@
 
 ## Как проверить работоспособность:
  - helm install
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+# Выполнено ДЗ №25
+
+ - [X] Основное ДЗ
+  - Пройдены все шаги из ДЗ
+
+## В процессе сделано:
+ - минимум необходымй для сдачи ДЗ
+
+## Как проверить работоспособность:
+ - helm install + импорт dashboard
 
 ## PR checklist
  - [X] Выставил label с номером домашнего задания

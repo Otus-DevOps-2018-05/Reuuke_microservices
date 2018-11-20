@@ -1,34 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_PROM",
-      "label": "Prom",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "prometheus",
-      "pluginName": "Prometheus"
-    }
-  ],
-  "__requires": [
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "5.3.0"
-    },
-    {
-      "type": "panel",
-      "id": "graph",
-      "name": "Graph",
-      "version": "5.0.0"
-    },
-    {
-      "type": "datasource",
-      "id": "prometheus",
-      "name": "Prometheus",
-      "version": "5.0.0"
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -45,7 +15,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": null,
+  "id": 2,
+  "iteration": 1542546996441,
   "links": [],
   "panels": [
     {
@@ -53,7 +24,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_PROM}",
+      "datasource": "Prom",
       "fill": 1,
       "gridPos": {
         "h": 9,
@@ -85,8 +56,9 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(ui_request_count[1m])",
+          "expr": "rate(ui_request_count{kubernetes_namespace=~\"$namespace\"}[1m])",
           "format": "time_series",
+          "hide": false,
           "intervalFactor": 1,
           "refId": "A"
         }
@@ -136,7 +108,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_PROM}",
+      "datasource": "Prom",
       "fill": 1,
       "gridPos": {
         "h": 9,
@@ -168,8 +140,9 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(ui_request_count{http_status=~\"^[45].+\"}[1m])",
+          "expr": "rate(ui_request_count{kubernetes_namespace=~\"$namespace\"}{http_status=~\"^[45].+\"}[1m])",
           "format": "time_series",
+          "hide": true,
           "intervalFactor": 1,
           "refId": "A"
         }
@@ -219,7 +192,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_PROM}",
+      "datasource": "Prom",
       "fill": 1,
       "gridPos": {
         "h": 9,
@@ -251,7 +224,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "histogram_quantile(0.95, sum(rate(ui_request_latency_seconds_bucket[5m])) by (le))",
+          "expr": "histogram_quantile(0.95, sum(rate(ui_request_latency_seconds_bucket{kubernetes_namespace=~\"$namespace\"}[5m])) by (le))",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -298,12 +271,78 @@
       }
     }
   ],
-  "refresh": "10s",
+  "refresh": false,
   "schemaVersion": 16,
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": []
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "text": "default",
+          "value": "default"
+        },
+        "datasource": "Prom",
+        "hide": 0,
+        "includeAll": true,
+        "label": "env",
+        "multi": true,
+        "name": "namespace",
+        "options": [
+          {
+            "selected": false,
+            "text": "All",
+            "value": "$__all"
+          },
+          {
+            "selected": false,
+            "text": "default",
+            "value": "default"
+          },
+          {
+            "selected": false,
+            "text": "kube-public",
+            "value": "kube-public"
+          },
+          {
+            "selected": false,
+            "text": "kube-system",
+            "value": "kube-system"
+          },
+          {
+            "selected": true,
+            "text": "production",
+            "value": "production"
+          },
+          {
+            "selected": false,
+            "text": "prometheus",
+            "value": "prometheus"
+          },
+          {
+            "selected": false,
+            "text": "review",
+            "value": "review"
+          },
+          {
+            "selected": false,
+            "text": "staging",
+            "value": "staging"
+          }
+        ],
+        "query": "label_values(namespace)",
+        "refresh": 0,
+        "regex": "/.+/",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
   },
   "time": {
     "from": "now-5m",
